@@ -12,6 +12,7 @@ class MyCountdownTimerState extends State<MyCountdownTimer>
 
   bool iconState = false;
   static final int defaultSeconds = 3;
+  int hours = 0, mins = 0, secs = 0;
 
   final TextEditingController hourTextController =
       new TextEditingController(text: '0');
@@ -23,7 +24,11 @@ class MyCountdownTimerState extends State<MyCountdownTimer>
   String get timerString {
     Duration duration =
         animationController.duration * animationController.value;
-    return '${duration.inHours.toString().padLeft(2, '0')}:${(duration.inMinutes ~/ 60).toString().padLeft(2, '0')}:${(duration.inSeconds % 60).toString().padLeft(2, '0')}';
+    if (animationController.value == 0.0) {
+      // print('finish');
+      // do something here when timer is end
+    }
+    return '${duration.inHours.toString().padLeft(2, '0')}:${(duration.inMinutes % 60).toString().padLeft(2, '0')}:${(duration.inSeconds % 60).toString().padLeft(2, '0')}';
   }
 
   @override
@@ -59,12 +64,14 @@ class MyCountdownTimerState extends State<MyCountdownTimer>
                         Positioned.fill(
                           child: AnimatedBuilder(
                             animation: animationController,
-                            builder: (BuildContext context, Widget child) {
+                            builder: (BuildContext innerContext, Widget child) {
                               return CustomPaint(
                                 painter: TimerPainter(
-                                    animation: animationController,
-                                    backgroundColor: Colors.white,
-                                    color: Theme.of(context).accentColor),
+                                  animation: animationController,
+                                  backgroundColor: Colors.white,
+                                  color: Theme.of(innerContext).accentColor,
+                                  context: context,
+                                ),
                               );
                             },
                           ),
@@ -146,11 +153,11 @@ class MyCountdownTimerState extends State<MyCountdownTimer>
                                         borderRadius: BorderRadius.circular(10),
                                       ),
                                       onPressed: () {
-                                        int hours =
+                                        hours =
                                             int.parse(hourTextController.text);
-                                        int mins =
+                                        mins =
                                             int.parse(minTextController.text);
-                                        int secs =
+                                        secs =
                                             int.parse(secTextController.text);
                                         animationController =
                                             AnimationController(
@@ -224,10 +231,9 @@ class TimerPainter extends CustomPainter {
   final Animation<double> animation;
   final Color backgroundColor;
   final Color color;
+  BuildContext context;
 
-  AnimationStatus lastStatus;
-
-  TimerPainter({this.animation, this.backgroundColor, this.color})
+  TimerPainter({this.animation, this.backgroundColor, this.color, this.context})
       : super(repaint: animation);
 
   @override
