@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+// 倒计时
+
 class MyCountdownTimer extends StatefulWidget {
   @override
   MyCountdownTimerState createState() => MyCountdownTimerState();

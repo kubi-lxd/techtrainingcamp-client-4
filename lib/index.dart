@@ -72,7 +72,6 @@ class _IndexState extends State<Index> with TickerProviderStateMixin {
       new MyAlarm(),
       new MyClock(),
       new EmptyPage(),
-      
     ];
     _currentPage = _pageList[_currentIndex];
   }

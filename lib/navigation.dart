@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+// 底部导航菜单
 // 创建一个 Icon 展示控件
 class NavigationIconView {
   // 创建两个属性，一个是 用来展示 icon， 一个是动画处理

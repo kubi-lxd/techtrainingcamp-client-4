@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'dart:async';
 
+// 正向计时器
+
 class MyTimer extends StatefulWidget {
   @override
   State<StatefulWidget> createState() => new MyTimerState();
