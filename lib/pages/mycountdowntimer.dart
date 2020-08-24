@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import '../stopwatch/fancyButton.dart';
 
 // 倒计时
 
@@ -150,7 +151,7 @@ class MyCountdownTimerState extends State<MyCountdownTimer>
                                         "设置时间🙂",
                                         style: TextStyle(fontSize: 16),
                                       ),
-                                      // color: Colors.blue,
+                                      color: Colors.lightBlue,
                                       shape: RoundedRectangleBorder(
                                         borderRadius: BorderRadius.circular(10),
                                       ),

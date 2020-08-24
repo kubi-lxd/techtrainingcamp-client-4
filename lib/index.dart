@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
-import 'test.dart';
+import 'stopwatch/stopwatch.dart';
 import 'navigation.dart';
 import 'pages/mytimer.dart';
 import 'pages/mycountdowntimer.dart';
 import 'pages/myalarm.dart';
 import 'pages/myclock.dart';
-
 
 class Index extends StatefulWidget {
   //  固定的写法
@@ -67,11 +66,11 @@ class _IndexState extends State<Index> with TickerProviderStateMixin {
 
     // 将我们 bottomBar 上面的按钮图标对应的页面存放起来，方便我们在点击的时候
     _pageList = <StatefulWidget>[
-      new MyTimer(),
+      new StopWatches(),
       new MyCountdownTimer(),
       new MyAlarm(),
       new MyClock(),
-      // new EmptyPage(),
+      // new StopWatches(),
     ];
     _currentPage = _pageList[_currentIndex];
   }

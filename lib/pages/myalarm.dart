@@ -15,7 +15,10 @@ class ClockDate {
   // ClockDate(this.chour, this.cmin, this.csec, this.state);
 }
 
-List<ClockDate> cdlist = [];
+DateTime now = DateTime.now();
+List<ClockDate> cdlist = [
+  ClockDate(now.hour, now.minute, now.second, true, '闹钟')
+];
 
 class MyAlarm extends StatefulWidget {
   @override
@@ -92,9 +95,9 @@ class MyAlarmPageState extends State<MyAlarm> {
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: <Widget>[
                     Text(
-                      '${data.chour}:${data.cmin}:${data.csec}',
+                      '${data.chour.toString().padLeft(2,'0')}:${data.cmin.toString().padLeft(2,'0')}:${data.csec.toString().padLeft(2,'0')}',
                       style: TextStyle(
-                        fontSize: 18,
+                        fontSize: 22,
                         fontWeight: FontWeight.w500,
                         color: Color(0xFF333333),
                       ),
@@ -117,7 +120,7 @@ class MyAlarmPageState extends State<MyAlarm> {
                   maxLines: 1,
                   overflow: TextOverflow.ellipsis,
                   style: TextStyle(
-                    fontSize: 15,
+                    fontSize: 18,
                     color: Color(0xFF999999),
                   ),
                 ),
