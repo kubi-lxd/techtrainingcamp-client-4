@@ -5,7 +5,7 @@ import 'package:flutter/material.dart';
 // import 'package:flutter_beep/flutter_beep.dart';
 // import 'package:flutter_ringtone_player/flutter_ringtone_player.dart';
 
-// for testing flutter beep
+// for testing flutter alert windows
 final navigatorKey = GlobalKey<NavigatorState>();
 
 class EmptyPage extends StatefulWidget {

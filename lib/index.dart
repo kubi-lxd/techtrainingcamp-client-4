@@ -53,11 +53,11 @@ class _IndexState extends State<Index> with TickerProviderStateMixin {
         vsync: this,
       ),
       // 需要测试其他页面时，可临时用这个 ICON 按钮
-      new NavigationIconView(
-        icon: new Icon(Icons.history),
-        title: new Text("测试"),
-        vsync: this,
-      ),
+      // new NavigationIconView(
+      //   icon: new Icon(Icons.history),
+      //   title: new Text("测试"),
+      //   vsync: this,
+      // ),
     ];
 
     // 给每一个按钮区域加上监听
@@ -71,7 +71,7 @@ class _IndexState extends State<Index> with TickerProviderStateMixin {
       new MyCountdownTimer(),
       new MyAlarm(),
       new MyClock(),
-      new EmptyPage(),
+      // new EmptyPage(),
     ];
     _currentPage = _pageList[_currentIndex];
   }
