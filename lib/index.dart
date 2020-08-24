@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'test.dart';
 import 'navigation.dart';
-import 'mytimer.dart';
-import 'mycountdowntimer.dart';
-import 'myalarm.dart';
-import 'myclock.dart';
+import 'pages/mytimer.dart';
+import 'pages/mycountdowntimer.dart';
+import 'pages/myalarm.dart';
+import 'pages/myclock.dart';
 
 
 class Index extends StatefulWidget {
