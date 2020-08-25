@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 import 'stopwatch/stopwatch.dart';
 import 'navigation.dart';
-import 'pages/mytimer.dart';
 import 'pages/mycountdowntimer.dart';
 import 'pages/myalarm.dart';
 import 'pages/myclock.dart';
+import 'pages/weather.dart';
+// MyTimer module
+// import 'pages/mytimer.dart';
 
 class Index extends StatefulWidget {
   //  固定的写法
@@ -51,6 +53,11 @@ class _IndexState extends State<Index> with TickerProviderStateMixin {
         title: new Text("时钟"),
         vsync: this,
       ),
+      new NavigationIconView(
+        icon: new Icon(Icons.wb_sunny),
+        title: new Text("天气"),
+        vsync: this,
+      ),
       // 需要测试其他页面时，可临时用这个 ICON 按钮
       // new NavigationIconView(
       //   icon: new Icon(Icons.history),
@@ -70,6 +77,7 @@ class _IndexState extends State<Index> with TickerProviderStateMixin {
       new MyCountdownTimer(),
       new MyAlarm(),
       new MyClock(),
+      new WeatherPage(),
       // new StopWatches(),
     ];
     _currentPage = _pageList[_currentIndex];
