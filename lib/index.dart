@@ -32,29 +32,28 @@ class _IndexState extends State<Index> with TickerProviderStateMixin {
     // 初始化导航图标
     _navigationViews = <NavigationIconView>[
       new NavigationIconView(
+        icon: new Icon(Icons.watch),
+        title: new Text("时钟"),
+        vsync: this,
+      ),
+      new NavigationIconView(
         icon: new Icon(Icons.av_timer),
         title: new Text("计时器"),
         vsync: this,
       ),
-      // vsync 默认属性和参数
       new NavigationIconView(
         icon: new Icon(Icons.hourglass_empty),
         title: new Text("倒计时"),
         vsync: this,
       ),
       new NavigationIconView(
-        icon: new Icon(Icons.alarm),
-        title: new Text("闹钟"),
-        vsync: this,
-      ),
-      new NavigationIconView(
-        icon: new Icon(Icons.watch),
-        title: new Text("时钟"),
-        vsync: this,
-      ),
-      new NavigationIconView(
         icon: new Icon(Icons.wb_sunny),
         title: new Text("天气"),
+        vsync: this,
+      ),
+      new NavigationIconView(
+        icon: new Icon(Icons.alarm),
+        title: new Text("闹钟"),
         vsync: this,
       ),
       // 需要测试其他页面时，可临时用这个 ICON 按钮
@@ -72,12 +71,11 @@ class _IndexState extends State<Index> with TickerProviderStateMixin {
 
     // 将我们 bottomBar 上面的按钮图标对应的页面存放起来，方便我们在点击的时候
     _pageList = <StatefulWidget>[
+      new SJTUClockPage(),
       new StopWatches(),
       new MyCountdownTimer(),
-      new MyAlarm(),
-      new SJTUClockPage(),
       new WeatherPage(),
-      // new StopWatches(),
+      new MyAlarm(),
     ];
     _currentPage = _pageList[_currentIndex];
   }
