@@ -5,8 +5,7 @@ import 'pages/mycountdowntimer.dart';
 import 'pages/myalarm.dart';
 import 'pages/myclock.dart';
 import 'pages/weather.dart';
-// MyTimer module
-// import 'pages/mytimer.dart';
+import 'clock/sjtuclock.dart';
 
 class Index extends StatefulWidget {
   //  固定的写法
@@ -76,7 +75,7 @@ class _IndexState extends State<Index> with TickerProviderStateMixin {
       new StopWatches(),
       new MyCountdownTimer(),
       new MyAlarm(),
-      new MyClock(),
+      new SJTUClockPage(),
       new WeatherPage(),
       // new StopWatches(),
     ];
