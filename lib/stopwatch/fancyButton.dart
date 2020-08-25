@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'constantNumbers.dart';
+import 'constants.dart';
 
 class FancyButton extends StatefulWidget {
   final String label;
@@ -34,7 +34,7 @@ class _FancyButtonState extends State<FancyButton> {
           child: Text(
             '${widget.label}',
             style: TextStyle(
-              color: Color(User_Colors().purple),
+              color: Color(UserColors().purple),
               fontSize: 18,
               // fontFamily: 'Varela',
               fontWeight: FontWeight.bold,

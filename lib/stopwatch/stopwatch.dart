@@ -1,11 +1,11 @@
 import 'dart:async';
 import 'package:flutter/cupertino.dart';
-import 'constantNumbers.dart';
+import 'constants.dart';
 import 'dart:core';
 import 'package:flutter/material.dart';
-import 'clockFace.dart';
-import 'clockDialog.dart';
-import 'fancyButton.dart';
+import 'clockface.dart';
+import 'clockdialog.dart';
+import 'fancybutton.dart';
 import 'package:vector_math/vector_math_64.dart' as Vector;
 import 'dart:math';
 
@@ -232,7 +232,7 @@ class _StopWatchState extends State<StopWatches> {
                           style: TextStyle(
                             fontSize: 18,
                             fontWeight: FontWeight.bold,
-                            color: Color(User_Colors().purple),
+                            color: Color(UserColors().purple),
                           ),
                           textAlign: TextAlign.center,
                         ),
@@ -242,7 +242,7 @@ class _StopWatchState extends State<StopWatches> {
                             fontSize: 18,
                             // fontFamily: 'Varela',
                             fontWeight: FontWeight.bold,
-                            color: Color(User_Colors().purple),
+                            color: Color(UserColors().purple),
                           ),
                           textAlign: TextAlign.center,
                         ),

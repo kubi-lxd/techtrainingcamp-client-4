@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class User_Colors {
+class UserColors {
   int purple = 0xff3c1361;
   int red = 0xffff2525;
   int brightYellow = 0xffffe03d;

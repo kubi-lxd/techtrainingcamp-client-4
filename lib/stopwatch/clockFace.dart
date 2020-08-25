@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'constantNumbers.dart';
+import 'constants.dart';
 
 class ClockFace extends StatelessWidget {
   final double width;
@@ -13,7 +13,7 @@ class ClockFace extends StatelessWidget {
       width: this.width,
       height: this.height,
       decoration: BoxDecoration(
-        color: Color(User_Colors().silver),
+        color: Color(UserColors().silver),
         shape: BoxShape.circle,
         boxShadow: [
           BoxShadow(
@@ -22,7 +22,7 @@ class ClockFace extends StatelessWidget {
               blurRadius: 5.0,
               spreadRadius: 1.0),
           BoxShadow(
-              color: Color(User_Colors().silver),
+              color: Color(UserColors().silver),
               offset: Offset(-4.0, -4.0),
               blurRadius: 15.0,
               spreadRadius: 1.0),

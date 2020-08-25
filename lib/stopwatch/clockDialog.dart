@@ -1,7 +1,7 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'constantNumbers.dart';
+import 'constants.dart';
 
 class ClockDialog extends CustomPainter {
   final hourTickMarkLength = 10.0;
@@ -21,7 +21,7 @@ class ClockDialog extends CustomPainter {
           textDirection: TextDirection.rtl,
         ),
         textStyle = TextStyle(
-          color: Color(User_Colors().purple),
+          color: Color(UserColors().purple),
           fontSize: 18.0,
         );
 
