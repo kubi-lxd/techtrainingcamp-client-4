@@ -14,7 +14,7 @@ class MyCountdownTimerState extends State<MyCountdownTimer>
   AnimationController animationController;
 
   bool iconState = false;
-  static final int defaultSeconds = 3;
+  static final int defaultSeconds = 10;
   int hours = 0, mins = 0, secs = 0;
 
   final TextEditingController hourTextController =
