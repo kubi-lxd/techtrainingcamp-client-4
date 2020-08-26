@@ -108,7 +108,7 @@ class _SJTUClockPage extends State<SJTUClockPage> {
         title: '时钟',
         home: new Scaffold(
           appBar: new AppBar(
-            title: new Text('时钟'),
+            title: new Text('⌚时钟'),
             actions: <Widget>[
               new PopupMenuButton<String>(
                 icon: Icon(Icons.history),
