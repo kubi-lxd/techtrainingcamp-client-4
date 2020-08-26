@@ -1,4 +1,4 @@
-# Flutter Clock
+# SJTU Clock
 
 本项目由 [kubi-lxd](https://github.com/kubi-lxd), [Liu-Yuelin](https://github.com/Liu-Yuelin) 和 [sinkinben](https://github.com/Liu-Yuelin) 共同完成，起源于 2020 字节跳动玩转客户端夏令营，主要内容是通过 [Flutter](https://flutter.dev/) 实现一个功能齐全、界面友好的时钟 APP 。
 
