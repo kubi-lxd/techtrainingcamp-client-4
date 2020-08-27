@@ -107,9 +107,9 @@ lib
 
 ## 效果演示
 
-|    <img src="./screenshots/weather1.png">    | <img src="./screenshots/weather2.png">  |
-| :------------------------------------------: | :-------------------------------------: |
-|     <img src="./screenshots/alarm2.png">     |  <img src="./screenshots/alarm1.png">   |
-|   <img src="./screenshots/sjtuclock.png">    | <img src="./screenshots/stopwatch.png"> |
-| <img src="./screenshots/countdowntimer.png"> |                                         |
+|    <img src="./screenshots/weather1.png">    |    <img src="./screenshots/weather2.png">     |
+| :------------------------------------------: | :-------------------------------------------: |
+|     <img src="./screenshots/alarm2.png">     |     <img src="./screenshots/alarm1.png">      |
+| <img src="./screenshots/sjtuclock-day.png">  | <img src="./screenshots/sjtuclock-night.png"> |
+| <img src="./screenshots/countdowntimer.png"> |    <img src="./screenshots/stopwatch.png">    |
 
