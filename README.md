@@ -107,6 +107,11 @@ lib
 
 ## 效果演示
 
+实际测试视频和PPT讲解：
+
++ 链接: https://pan.baidu.com/s/13QUcvlz9vstXHGHspCeqow 
++ 提取码: w7ta
+
 |    <img src="./screenshots/weather1.png">    |    <img src="./screenshots/weather2.png">     |
 | :------------------------------------------: | :-------------------------------------------: |
 |     <img src="./screenshots/alarm2.png">     |     <img src="./screenshots/alarm1.png">      |
